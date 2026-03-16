@@ -1,21 +1,21 @@
-﻿# AIOS â€” AI Operating System
+﻿# AIOS — AI Operating System
 
-**Starter Kit** â€” Your personal AI business operating system, built on Claude Code.
+**Starter Kit** — Your personal AI business operating system, built on Claude Code.
 
 AIOS turns Claude Code into a full business OS. It remembers your preferences, learns from feedback, maintains itself between sessions, and executes real tasks through a growing library of skills.
 
-> **What's included now:** 1 skill â€” `infographics` (visual content generation via Kie AI).
-> More skills are coming. This starter kit gives you the full framework to run them as they're released â€” or build your own.
+> **What's included now:** 1 skill — `infographics` (visual content generation via Kie AI).
+> More skills are coming. This starter kit gives you the full framework to run them as they're released — or build your own.
 
 ---
 
 ## What You Get
 
-- **Complete AIOS framework** â€” memory, feedback logging, session continuity, self-maintaining skill registry
-- **1 ready-to-use skill**: `infographics` â€” generate professional, brand-consistent infographics via Kie AI Nano Banana 2
-- **Extensible skill system** â€” drop a new skill folder into `skills/` and AIOS picks it up automatically
-- **Brand-first workflow** â€” set your visual identity once, every infographic inherits it automatically
-- **Memory and learning** â€” feedback is logged per skill and applied to every future run
+- **Complete AIOS framework** — memory, feedback logging, session continuity, self-maintaining skill registry
+- **1 ready-to-use skill**: `infographics` — generate professional, brand-consistent infographics via Kie AI Nano Banana 2
+- **Extensible skill system** — drop a new skill folder into `skills/` and AIOS picks it up automatically
+- **Brand-first workflow** — set your visual identity once, every infographic inherits it automatically
+- **Memory and learning** — feedback is logged per skill and applied to every future run
 
 ---
 
@@ -25,8 +25,8 @@ AIOS turns Claude Code into a full business OS. It remembers your preferences, l
 
 - [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) installed and configured
 - A terminal or IDE with Claude Code support (VS Code, Cursor, etc.)
-- **For infographics**: `KIE_API_KEY` from [kie.ai](https://kie.ai/api-key) â€” required for image generation
-- **Optional**: `OPENROUTER_API_KEY` â€” enables AI quality review and auto-refinement on infographics
+- **For infographics**: `KIE_API_KEY` from [kie.ai](https://kie.ai/api-key) — required for image generation
+- **Optional**: `OPENROUTER_API_KEY` — enables AI quality review and auto-refinement on infographics
 
 ### Setup (2 minutes)
 
@@ -38,7 +38,7 @@ AIOS turns Claude Code into a full business OS. It remembers your preferences, l
    ```
 3. **Open the folder in your terminal or IDE**
 4. **Start Claude Code** in the project directory
-5. **Start working** â€” AIOS reads this setup automatically
+5. **Start working** — AIOS reads this setup automatically
 
 ---
 
@@ -46,22 +46,22 @@ AIOS turns Claude Code into a full business OS. It remembers your preferences, l
 
 | Skill | What It Does | Requires |
 |-------|-------------|---------|
-| `infographics` | Generate brand-consistent infographics via Kie AI Nano Banana 2. Set up your brand once â€” every future infographic matches your visual identity automatically. | `KIE_API_KEY` |
+| `infographics` | Generate brand-consistent infographics via Kie AI Nano Banana 2. Set up your brand once — every future infographic matches your visual identity automatically. | `KIE_API_KEY` |
 
-> More skills are coming â€” content writing, LinkedIn posts, email sequences, SEO research, and more.
+> More skills are coming — content writing, LinkedIn posts, email sequences, SEO research, and more.
 > When new skills drop, copy them into `skills/` and AIOS registers them automatically.
 
 ---
 
 ## How It Works
 
-### Layer 1 â€” Skills (`skills/`)
+### Layer 1 — Skills (`skills/`)
 The execution engine. Each skill is a self-contained folder with a `SKILL.md` that defines what it does, how it works, and what it needs. AIOS reads every skill at session start and routes your requests to the right one.
 
-### Layer 2 â€” Memory (`context/`)
+### Layer 2 — Memory (`context/`)
 The agent's brain. AIOS tracks your preferences in `context/user.md`, logs feedback in `context/learnings.md`, and saves session notes in `context/memory/`. It picks up exactly where you left off every session.
 
-### Layer 3 â€” Projects (`projects/`)
+### Layer 3 — Projects (`projects/`)
 Where all deliverables land. Organized by date. Your output library grows automatically.
 
 ---
@@ -88,7 +88,7 @@ Drop a new folder with a `SKILL.md` into `skills/`. At the next session start, A
 4. Creates a feedback section in `context/learnings.md`
 5. Confirms it's ready
 
-Skills follow a standard format â€” see `CLAUDE.md` for the SKILL FORMAT STANDARD.
+Skills follow a standard format — see `CLAUDE.md` for the SKILL FORMAT STANDARD.
 
 ---
 
